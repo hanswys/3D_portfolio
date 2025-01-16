@@ -15,12 +15,7 @@ export function Astronaut() {
 
 useEffect(() => {
     console.log(animations);
-    const animation = actions.wave; // Access the getter directly
-    if (animation) {
-      animation.play();
-    } else {
-      console.error("Animation 'floating' not found.");
-    }
+    actions["mixamo.com"].play();
   }, [actions]);
 
   useFrame(({ clock, camera }) => {
@@ -28,7 +23,7 @@ useEffect(() => {
     astronautRef.current.position.y = Math.sin(clock.elapsedTime) * 0.2 + 2;
   
     // Apply continuous rotation to simulate free floating in space
-    astronautRef.current.rotation.y += 0.01; // Adjust the value to control the speed of rotation
+    astronautRef.current.rotation.y += 0.001; // Adjust the value to control the speed of rotation
   
     // Update the X and Z positions based on the direction of movement
     if (astronautRef.current.position.x > camera.position.x + 10) {
