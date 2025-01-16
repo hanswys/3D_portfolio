@@ -29,6 +29,10 @@ import soundoff from './soundoff.png'
 import dart from './dart.svg'
 import firebase from './firebase.svg'
 import sql from './sql.svg'
+import hat from './hat.svg'
+import inventory from './inventory.svg'
+import dice from './dice.svg'
+import website from './website.svg'
 
 export {
     css,
@@ -61,5 +65,9 @@ export {
     soundoff,
     dart,
     firebase,
-    sql
+    sql,
+    hat,
+    website,
+    dice,
+    inventory,
 }

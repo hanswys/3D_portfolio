@@ -1,9 +1,7 @@
 import { uco, ippudo } from "../assets/images";
 import {
     car,
-    contact,
     css,
-    estate,
     git,
     github,
     html,
@@ -11,18 +9,17 @@ import {
     linkedin,
     nextjs,
     nodejs,
-    pricewise,
     react,
-    redux,
     sass,
-    snapgram,
-    summiz,
     tailwindcss,
-    threads,
     typescript,
     dart,
     firebase,
     sql,
+    inventory,
+    hat,
+    dice,
+    website,
 } from "../assets/icons";
 
 export const skills = [
@@ -142,32 +139,31 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: pricewise,
+        iconUrl: inventory,
         theme: 'btn-back-red',
         name: 'Inventory Manager Web App',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        description: 'Developed a real-time inventory management system with Firestore, ensuring reliable tracking and exclusive user access.',
+        link: 'https://github.com/hanswys/ywong8-project2-cmsc4373',
     },
     {
-        iconUrl: threads,
+        iconUrl: dice,
         theme: 'btn-back-green',
         name: 'Dice Roll Simulator Web Application',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
+        description: 'Created a simulation app with betting functionality, win/loss tracking, and consistent result storage.',
+        link: 'https://github.com/hanswys/ywong8-project1-cmsc4373',
     },
     {
-        iconUrl: car,
+        iconUrl: hat,
         theme: 'btn-back-blue',
         name: 'SQL Web-Based Student Enrollment System',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        description: 'Designed a comprehensive system for managing student records, courses, and enrollment at the University of Central Oklahoma, with robust features like GPA tracking and real-time prerequisite validation.',
+        link: 'https://www.youtube.com/watch?v=SJzyLme2jiM',
     },
     {
-        iconUrl: snapgram,
+        iconUrl: website,
         theme: 'btn-back-pink',
-        name: 'In progress...',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        name: '3D Portfolio Website',
+        description: 'Built an interactive React-based portfolio with Three.js for 3D visualizations and responsive designs using Tailwind CSS.',
     },
     
 ];

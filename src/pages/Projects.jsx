@@ -15,11 +15,7 @@ const Projects = () => {
       </h1>
 
       <p className='text-slate-500 mt-2 leading-relaxed'>
-        I've embarked on numerous projects throughout the years, but these are
-        the ones I hold closest to my heart. Many of them are open-source, so if
-        you come across something that piques your interest, feel free to
-        explore the codebase and contribute your ideas for further enhancements.
-        Your collaboration is highly valued!
+      Over the years, I’ve worked on various projects, but these are the ones I’m most passionate about. Many are open-source, so if something catches your eye, feel free to dive into the codebase and share your ideas. I’d love to collaborate and build on them together!
       </p>
 
       <div className='flex flex-wrap my-20 gap-16'>
