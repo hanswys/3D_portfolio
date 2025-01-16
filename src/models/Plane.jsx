@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 
-import planeScene from "../assets/3d/drifter.glb";
+import planeScene from "../assets/3d/floating_fox.glb";
 
 // 3D Model from: https://sketchfab.com/3d-models/stylized-ww1-plane-c4edeb0e410f46e8a4db320879f0a1db
 export function Plane({ isRotating, ...props }) {
@@ -15,21 +15,9 @@ export function Plane({ isRotating, ...props }) {
   // Note: Animation names can be found on the Sketchfab website where the 3D model is hosted.
   useEffect(() => {
     if (isRotating) {
-      const animation = actions["Car engine"]; // Access the getter directly
-      if (animation) {
-        animation.play();
-      } else {
-        console.error("Animation 'floating' not found.");
-      }
+      actions["Animation"].play();
     } else {
-      const animation = actions["Car engine"]; // Access the getter directly
-      if (animation) {
-        animation.stop();
-      } else {
-        console.error("Animation 'floating' not found.");
-      }
-      
-
+      actions["Animation"].stop();
     }
     console.log(actions);
   }, [actions, isRotating]);

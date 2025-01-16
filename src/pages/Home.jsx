@@ -4,7 +4,7 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import sakura from "../assets/sakura.mp3";
 import { HomeInfo, Loader } from "../components";
 import { soundoff, soundon } from "../assets/icons";
-import { Bird, Island, Plane, Sky, Car, Astronaut } from "../models";
+import { Island, Plane, Sky, Astronaut } from "../models";
 
 const Home = () => {
   const audioRef = useRef(new Audio(sakura));
@@ -33,7 +33,7 @@ const Home = () => {
       screenScale = [0.5, 0.5, 0.5];
       screenPosition = [0, -1.5, 0];
     } else {
-      screenScale = [0.005, 0.005, 0.005];
+      screenScale = [0.5, 0.5, 0.5];
       screenPosition = [0, -4, -4];
     }
 
@@ -99,7 +99,7 @@ const Home = () => {
           <Plane
             isRotating={isRotating}
             position={biplanePosition}
-            rotation={[0, -0.5, 0]}
+            rotation={[0, 0.3, 0]}
             scale={biplaneScale}
           />
         </Suspense>
